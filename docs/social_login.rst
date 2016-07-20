@@ -16,7 +16,7 @@ similar flow, and this guide will show you by example.
 Facebook Login
 --------------
 
-To use Facebook Login you must create a Facebook Application, this is done
+To use Facebook Login you must create a Facebook Application. This is done
 through their Developer site.  In the next few minutes I'll walk you through
 *everything* you need to know to support Facebook login with your app.
 
@@ -27,15 +27,22 @@ Create a Facebook App
 The first thing you need to do is log into the `Facebook Developer Site`_ and
 create a new Facebook App.
 
-You can do this by visiting the `Facebook Developer Site`_ and clicking the "Apps"
-menu at the top of the screen, then select the "Create a New App" button.  You
+You can do this by visiting the `Facebook Developer Site`_ and clicking the
+"My Apps" menu at the top of the screen, then select "Add a New App".  You
 should see something like the following:
 
 .. image:: /_static/facebook-new-project.png
+**TODO: Image is out of date**
 
-Go ahead and pick a "Display Name" (usually the name of your app), and choose a
-category for your app.  Once you've done this, click the "Create App" button.
+Choose the "Website" button and choose a name. Now click "Create New Facebook App ID".
 
+Enter your contact email and choose a category.  Or, choose that this is a test
+version of another app, if this is a copy for your dev or test server.
+
+Get past Facebook's captcha test, and click "Submit".
+
+Supply your site URL and click "Next". Click any of the next steps to get back to the
+main flow, and choose your newly-created app.
 
 Specify Allowed URLs
 ....................
@@ -57,6 +64,7 @@ Lastly, click the "Save Changes" button to save the changes.
 Your settings should now look something like this:
 
 .. image:: /_static/facebook-url-settings.png
+**TODO: Image is out of date**
 
 
 Create a Facebook Directory
@@ -77,7 +85,7 @@ Facebook application:
 - For the "Facebook Client Secret" field, insert your Facebook Client Secret
   which you got in the previous steps.
 
-Make sure to click "Create" to finish creating your directory.
+Make sure to click "Create Directory" to finish creating your directory.
 
 Next, you need to hook your new Facebook Directory up to your Stormpath
 Application.  To do this, visit the `Stormpath Admin Console`_, navigate to
